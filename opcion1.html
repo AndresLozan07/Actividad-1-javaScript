@@ -1,13 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presidentes</title>
+    <title>Presidentes de Colombia | ColombiaInfo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <h1>Presidentes De Colombia</h1>
+<body data-pagina="presidentes">
+    <header class="encabezado">
+        <nav class="navegacion contenedor" aria-label="Navegación principal">
+            <a class="logo" href="index.html">Colombia<span>Info</span></a>
+            <div class="enlaces">
+                <a class="activo" href="opcion1.html">Presidentes</a>
+                <a href="opcion2.html">Sabores</a>
+            </div>
+        </nav>
+    </header>
 
-    <p>En esta pagina podra ver algunos de los presidentes que ha tenido Colombia</p>
+    <main class="contenedor seccion">
+        <a class="volver" href="index.html">← Volver al inicio</a>
+        <div class="encabezado-seccion encabezado-listado">
+            <p class="etiqueta">Historia política</p>
+            <h1>Presidentes de Colombia</h1>
+            <p>Conoce algunos de los mandatarios que han hecho parte de la historia del país. La información se organiza desde el periodo más antiguo.</p>
+        </div>
+        <p id="estado" class="mensaje-estado" role="status" aria-live="polite">Cargando información de los presidentes...</p>
+        <section id="lista-presidentes" class="rejilla-tarjetas" aria-label="Listado de presidentes"></section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor pie-contenido">
+            <p>ColombiaInfo · Presidentes de Colombia</p>
+            <a href="index.html">Regresar al inicio</a>
+        </div>
+    </footer>
 </body>
 </html>
