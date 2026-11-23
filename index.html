@@ -1,22 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ColombiaInfo</title>
-    <script src="script.js" defer></script>
+    <meta name="description" content="Conoce la historia y la gastronomía de Colombia mediante datos de una API pública.">
+    <title>ColombiaInfo | Inicio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header class="encabezado">
+        <nav class="navegacion contenedor" aria-label="Navegación principal">
+            <a class="logo" href="index.html">Colombia<span>Info</span></a>
+            <div class="enlaces">
+                <a href="opcion1.html">Presidentes</a>
+                <a href="opcion2.html">Sabores</a>
+            </div>
+        </nav>
+    </header>
 
-    <h1>ColombiaInfo</h1>
+    <main>
+        <section class="portada">
+            <div class="contenedor portada-contenido">
+                <p class="etiqueta">Cultura · Historia · Tradición</p>
+                <h1>Descubre Colombia</h1>
+                <p>Un recorrido por algunos de los presidentes y platos típicos que hacen parte de la historia y la identidad de nuestro país.</p>
+                <div class="acciones">
+                    <a class="boton boton-claro" href="opcion1.html">Conocer presidentes</a>
+                    <a class="boton boton-borde" href="opcion2.html">Explorar sabores</a>
+                </div>
+            </div>
+        </section>
 
-    <h3>ingrese la opcion que desea elegir</h3>
+        <section class="contenedor seccion">
+            <div class="encabezado-seccion">
+                <p class="etiqueta">Explora el portal</p>
+                <h2>Dos formas de conocer Colombia</h2>
+                <p>Selecciona una de las siguientes secciones para consultar información obtenida desde la API Colombia.</p>
+            </div>
+            <div class="tarjetas-inicio">
+                <article class="tarjeta-inicio">
+                    <div class="icono-tarjeta" aria-hidden="true">🏛️</div>
+                    <h3>Presidentes de Colombia</h3>
+                    <p>Consulta los nombres, periodos presidenciales, partidos políticos y fotografías de diferentes mandatarios.</p>
+                    <a class="enlace-flecha" href="opcion1.html">Ver presidentes <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="tarjeta-inicio">
+                    <div class="icono-tarjeta" aria-hidden="true">🍲</div>
+                    <h3>Sabores de Colombia</h3>
+                    <p>Conoce platos típicos, sus descripciones, imágenes y los departamentos con los que se relacionan.</p>
+                    <a class="enlace-flecha" href="opcion2.html">Ver platos típicos <span aria-hidden="true">→</span></a>
+                </article>
+            </div>
+        </section>
+    </main>
 
-    <button id="btn1">Presidentes De Colombia</button>
-
-    <br><br>
-
-    <button id="btn2">Sabores De Colombia</button>
-
-  
+    <footer class="pie-pagina">
+        <div class="contenedor pie-contenido">
+            <p>ColombiaInfo · Un recorrido por nuestro país</p>
+            <p>Información consultada desde <a href="https://api-colombia.com/" target="_blank" rel="noopener noreferrer">API Colombia</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>
