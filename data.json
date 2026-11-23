@@ -1,0 +1,6 @@
+{
+    "api": {
+        "presidentes": "https://api-colombia.com/api/v1/President",
+        "platos": "https://api-colombia.com/api/v1/TypicalDish"
+    }
+}
