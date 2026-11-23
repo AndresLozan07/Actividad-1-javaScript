@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabores De Colombia</title>
+    <title>Sabores de Colombia | ColombiaInfo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-<body>
-    <h1>Sabores De Colombia</h1>
-    
-    <p>En esta pagina podra ver algunos de los platos y sabores mas caracteristicos de Colombia</p>
+<body data-pagina="sabores">
+    <header class="encabezado">
+        <nav class="navegacion contenedor" aria-label="Navegación principal">
+            <a class="logo" href="index.html">Colombia<span>Info</span></a>
+            <div class="enlaces">
+                <a href="opcion1.html">Presidentes</a>
+                <a class="activo" href="opcion2.html">Sabores</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor seccion">
+        <a class="volver" href="index.html">← Volver al inicio</a>
+        <div class="encabezado-seccion encabezado-listado">
+            <p class="etiqueta">Gastronomía colombiana</p>
+            <h1>Sabores de Colombia</h1>
+            <p>Explora algunos platos tradicionales de las diferentes regiones del país y conoce sus características.</p>
+        </div>
+        <div class="resumen-platos">
+            <span class="resumen-numero" id="total-platos">—</span>
+            <span>platos encontrados en la consulta</span>
+        </div>
+        <p id="estado" class="mensaje-estado" role="status" aria-live="polite">Cargando información de los platos típicos...</p>
+        <section id="lista-platos" class="rejilla-tarjetas" aria-label="Listado de platos típicos"></section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor pie-contenido">
+            <p>ColombiaInfo · Sabores de Colombia</p>
+            <a href="index.html">Regresar al inicio</a>
+        </div>
+    </footer>
 </body>
 </html>
